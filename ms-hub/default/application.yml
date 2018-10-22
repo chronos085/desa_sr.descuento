@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://10.40.4.79:5432/hub-desarrollo
+    username: hub
+    password: Apimono123
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+
+
+eureka:
+  instance:
+    metadata-map:
+      management:
+        port: 9090
