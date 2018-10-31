@@ -25,6 +25,10 @@ zuul:
       path: /hub/v1/**
       serviceId: MS-HUB
       stripPrefix: false
+    ms-supereduc:
+      path: /supereduc/v1/**
+      serviceId: MS-SUPEREDUC
+      stripPrefix: false
   ratelimit:
     enabled: false
     repository: IN_MEMORY
